@@ -1,0 +1,7 @@
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\bin\Debug\praktik_7.2_fungsi.exe.config
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\bin\Debug\praktik_7.2_fungsi.exe
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\bin\Debug\praktik_7.2_fungsi.pdb
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\obj\Debug\praktik_7.2_fungsi.csproj.AssemblyReference.cache
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\obj\Debug\praktik_7.2_fungsi.csproj.CoreCompileInputs.cache
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\obj\Debug\praktik_7.2_fungsi.exe
+D:\ferlita\praktik_7.2_fungsi\praktik_7.2_fungsi\obj\Debug\praktik_7.2_fungsi.pdb
