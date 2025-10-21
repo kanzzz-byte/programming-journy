@@ -1,0 +1,8 @@
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\bin\Debug\fungsi_hitung_luas.exe.config
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\bin\Debug\fungsi_hitung_luas.exe
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\bin\Debug\fungsi_hitung_luas.pdb
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\obj\Debug\fungsi_hitung_luas.csproj.AssemblyReference.cache
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\obj\Debug\fungsi_hitung_luas.csproj.CoreCompileInputs.cache
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\obj\Debug\fungsi_hitung_luas.exe
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\obj\Debug\fungsi_hitung_luas.pdb
+D:\ferlita\fungsi_hitung_luas\fungsi_hitung_luas\obj\Debug\fungsi_hitung_luas.exe.config
