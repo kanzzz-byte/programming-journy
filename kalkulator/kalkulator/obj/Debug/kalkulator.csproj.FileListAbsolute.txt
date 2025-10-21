@@ -1,0 +1,7 @@
+D:\ferlita\kalkulator\kalkulator\bin\Debug\kalkulator.exe.config
+D:\ferlita\kalkulator\kalkulator\bin\Debug\kalkulator.exe
+D:\ferlita\kalkulator\kalkulator\bin\Debug\kalkulator.pdb
+D:\ferlita\kalkulator\kalkulator\obj\Debug\kalkulator.csproj.AssemblyReference.cache
+D:\ferlita\kalkulator\kalkulator\obj\Debug\kalkulator.csproj.CoreCompileInputs.cache
+D:\ferlita\kalkulator\kalkulator\obj\Debug\kalkulator.exe
+D:\ferlita\kalkulator\kalkulator\obj\Debug\kalkulator.pdb
