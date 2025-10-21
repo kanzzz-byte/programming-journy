@@ -1,0 +1,7 @@
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\obj\Debug\tugas_fungsi_kali.csproj.AssemblyReference.cache
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\obj\Debug\tugas_fungsi_kali.csproj.CoreCompileInputs.cache
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\bin\Debug\tugas_fungsi_kali.exe.config
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\bin\Debug\tugas_fungsi_kali.exe
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\bin\Debug\tugas_fungsi_kali.pdb
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\obj\Debug\tugas_fungsi_kali.exe
+D:\ferlita\tugas_fungsi_kali\tugas_fungsi_kali\obj\Debug\tugas_fungsi_kali.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tugas_fungsi_kali", "tugas_fungsi_kali\tugas_fungsi_kali.csproj", "{6211D4CC-5CA7-4010-870B-930204D21D6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6211D4CC-5CA7-4010-870B-930204D21D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6211D4CC-5CA7-4010-870B-930204D21D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6211D4CC-5CA7-4010-870B-930204D21D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6211D4CC-5CA7-4010-870B-930204D21D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0520B871-94A0-4B82-B1C6-DE7D9477A56C}
+	EndGlobalSection
+EndGlobal

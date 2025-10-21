@@ -1,0 +1,7 @@
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\bin\Debug\tugas_fungsi_KonversiSuhu.exe.config
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\bin\Debug\tugas_fungsi_KonversiSuhu.exe
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\bin\Debug\tugas_fungsi_KonversiSuhu.pdb
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\obj\Debug\tugas_fungsi_KonversiSuhu.csproj.AssemblyReference.cache
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\obj\Debug\tugas_fungsi_KonversiSuhu.csproj.CoreCompileInputs.cache
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\obj\Debug\tugas_fungsi_KonversiSuhu.exe
+D:\ferlita\tugas_fungsi_KonversiSuhu\tugas_fungsi_KonversiSuhu\obj\Debug\tugas_fungsi_KonversiSuhu.pdb
