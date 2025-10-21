@@ -5,3 +5,4 @@ D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ra
 D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.csproj.CoreCompileInputs.cache
 D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.exe
 D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.pdb
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.exe.config
