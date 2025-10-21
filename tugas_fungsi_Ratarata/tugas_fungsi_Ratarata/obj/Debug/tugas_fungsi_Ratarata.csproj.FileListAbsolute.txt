@@ -1,0 +1,7 @@
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\bin\Debug\tugas_fungsi_Ratarata.exe.config
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\bin\Debug\tugas_fungsi_Ratarata.exe
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\bin\Debug\tugas_fungsi_Ratarata.pdb
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.csproj.AssemblyReference.cache
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.csproj.CoreCompileInputs.cache
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.exe
+D:\ferlita\tugas_fungsi_Ratarata\tugas_fungsi_Ratarata\obj\Debug\tugas_fungsi_Ratarata.pdb
