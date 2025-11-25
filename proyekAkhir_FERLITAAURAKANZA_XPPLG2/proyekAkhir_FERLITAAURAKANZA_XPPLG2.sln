@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyekAkhir_FERLITAAURAKANZA_XPPLG2", "proyekAkhir_FERLITAAURAKANZA_XPPLG2\proyekAkhir_FERLITAAURAKANZA_XPPLG2.csproj", "{BCB9A53C-0D19-45CA-B59D-C90B33B25615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCB9A53C-0D19-45CA-B59D-C90B33B25615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB9A53C-0D19-45CA-B59D-C90B33B25615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB9A53C-0D19-45CA-B59D-C90B33B25615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB9A53C-0D19-45CA-B59D-C90B33B25615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A423AB4-0EB5-4FB6-B6F6-E9A7EA8D4B01}
+	EndGlobalSection
+EndGlobal
