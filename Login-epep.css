@@ -1,0 +1,56 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background halaman */
+body {
+  background-color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Class selector */
+.login-box {
+  background-color: #1c1c1c;
+  padding: 25px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Tag selector */
+h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+/* Tag selector */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Class selector */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.btn-login:hover {
+  background-color: #e6b800;
+}
