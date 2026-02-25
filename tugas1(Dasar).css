@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 30px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Judul menggunakan px */
+.judul-px {
+    font-size: 36px;
+    color: navy;
+    margin-bottom: 20px;
+    border-bottom: 3px solid navy;
+    padding-bottom: 10px;
+}
+
+/* Paragraf menggunakan pt */
+.paragraf-pt {
+    font-size: 14pt;
+    line-height: 1.6;
+    color: darkslategray;
+    margin-bottom: 30px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid darkslategray;
+}
+
+/* Box menggunakan cm */
+.box-cm {
+    width: 8cm;
+    height: 5cm;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    border: 3px solid #0a4d68;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Container untuk box persen */
+.container-persen {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px dashed #666;
+}
+
+/* Box menggunakan persen */
+.box-persen {
+    width: 70%;
+    height: 150px;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border: 3px solid #b13e4f;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.keterangan-persen {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Efek hover */
+.box-cm:hover, .box-persen:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
