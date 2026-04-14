@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.payment-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* CARD */
+.summary, .methods {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.summary h3,
+.methods h3 {
+    margin-bottom: 15px;
+}
+
+.summary hr {
+    margin: 10px 0;
+}
+
+/* METODE */
+.method {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.method:hover {
+    background: #f0f0f0;
+}
+
+.method input {
+    margin-right: 10px;
+}
+
+/* BUTTON */
+.pay-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00aa5b; /* hijau ala Tokopedia */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background: #008f4c;
+}

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: silver; /* background warna */
+    background-image: url('https://via.placeholder.com/800x600');
+    background-size: cover;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    background: #333;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Pseudo-class */
+nav ul li a:hover {
+    background: rgb(78, 68, 87);
+}
+
+/* Submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #555;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+/* Efek pseudo-class pada gambar */
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: red;
+}
