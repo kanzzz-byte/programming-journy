@@ -62,7 +62,7 @@ h1 {
 
 .menu li:nth-child(4) a {
     background-color: #eb79c1; 
-    
+    text-decoration: none;
     border-radius: 3px;
 
 }
