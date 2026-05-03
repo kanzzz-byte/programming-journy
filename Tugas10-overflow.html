@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Overflow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        /* Navigasi */
+        .nav {
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: #e0e0e0;
+            padding: 10px 0;
+        }
+        .nav a {
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 0 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background-color: #45a049;
+        }
+        /* Container artikel untuk memberi jarak */
+        .artikel-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        /* Gaya dasar artikel */
+        .artikel {
+            width: 300px;
+            border: 2px solid #333;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .artikel h3 {
+            text-align: center;
+            margin-top: 0;
+            background-color: #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .artikel img {
+            display: block;
+            margin: 0 auto 10px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        /* Konten artikel dengan overflow */
+        .konten {
+            width: 100%;
+            height: 150px;   /* Tinggi tetap agar overflow terjadi */
+            background-color: #f0f0f0;
+            padding: 8px;
+            border: 1px dashed #aaa;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        /* Masing-masing overflow */
+        .visible { overflow: visible; }
+        .hidden { overflow: hidden; }
+        .scroll { overflow: scroll; }
+        .auto { overflow: auto; }
+    </style>
+</head>
+<body>
+
+<h1>🏷️ Minum Yuk!</h1>
+
+<div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Product</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="artikel-container">
+
+    <!-- Artikel 1: overflow visible -->
+    <div class="artikel">
+        <h3>Produk 1: pink Scoop</h3>
+        <img src="es krim 1.jpg" alt="Batik">
+        <div class="konten visible">
+            <strong>[overflow: visible]</strong><br>
+            Es krim pink adalah hidangan penutup yang tampil dengan warna cantik dan menggoda, 
+            biasanya memiliki rasa buah seperti stroberi yang manis dan sedikit asam. 
+            Teksturnya lembut dan creamy, memberikan sensasi dingin yang menyegarkan di setiap gigitan. 
+            Selain rasanya yang lezat,tampilannya yang estetik membuat es krim ini sangat menarik,
+             terutama bagi anak-anak dan remaja.
+        </div>
+    </div>
+
+    <!-- Artikel 2: overflow hidden -->
+    <div class="artikel">
+        <h3>Produk 2: Cool Stick</h3>
+        <img src="es krim stik.jpg" alt="Kopi">
+        <div class="konten hidden">
+            <strong>[overflow: hidden]</strong><br>
+            Es krim stik adalah camilan dingin yang praktis dan mudah dinikmati kapan saja. 
+            Disajikan dengan pegangan stik, es krim ini hadir dalam berbagai rasa,
+             mulai dari cokelat, vanila, hingga buah-buahan segar. 
+             Teksturnya bisa creamy atau sedikit es (ice-based), memberikan pilihan sensasi yang berbeda. 
+            Cocok dinikmati saat cuaca panas untuk menyegarkan tubuh.
+        </div>
+    </div>
+
+    <!-- Artikel 3: overflow scroll -->
+    <div class="artikel">
+        <h3>Produk 3: Chill Drink</h3>
+        <img src="segar.jpg" alt="Sepatu">
+        <div class="konten scroll">
+            <strong>[overflow: scroll]</strong><br>
+            Minuman segar merupakan pilihan tepat untuk melepas dahaga, terutama di cuaca panas.
+            Biasanya dibuat dari campuran buah-buahan, sirup, atau teh yang disajikan dengan es batu. 
+            Rasanya menyegarkan, bisa manis, asam, atau kombinasi keduanya.
+            Selain menyegarkan, minuman ini juga memberikan energi dan membuat tubuh terasa lebih rileks.
+        </div>
+    </div>
+
+    <!-- Artikel 4: overflow auto -->
+    <div class="artikel">
+        <h3>Produk 4: Sweet Mochi</h3>
+        <img src="mochi.jpg" alt="Tote Bag">
+        <div class="konten auto">
+            <strong>[overflow: auto]</strong><br>
+            Mochi ungu adalah camilan khas dengan tekstur kenyal dan lembut yang terbuat dari tepung beras ketan. 
+            Warna ungunya berasal dari ubi ungu atau taro, yang memberikan rasa manis alami dan aroma khas. 
+            Biasanya diisi dengan krim atau pasta lembut di dalamnya. 
+            Mochi ini tidak hanya enak, tetapi juga memiliki tampilan unik yang menarik perhatian.
+        </div>
+    </div>
+
+</div>
+
+<!-- Penjelasan singkat (opsional) -->
+<p style="text-align: center; margin-top: 40px; color: #555; font-style: italic;">
+    Perhatikan perbedaan perilaku overflow: 
+    visible (konten keluar), hidden (terpotong), 
+    scroll (scrollbar selalu), auto (scrollbar hanya jika perlu).</p>
+
+</body>
+</html>
