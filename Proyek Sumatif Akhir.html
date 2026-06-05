@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik Favorit</title>
+    <link rel="stylesheet" href="proyek.css">
+</head>
+<script>
+    /* SEARCH */
+
+function searchMusic(){ /* Membuat Fungsi Pencarian */
+
+    /* Mengambil Teks Pencarian dari User */
+    let input =
+    document.getElementById("search")
+    .value.toLowerCase();
+
+    /* Mencari Semua Kartu Lagu */
+    let cards =
+    document.querySelectorAll(".card");
+
+    /* Memeriksa Satu per Satu Kartu */
+    cards.forEach(function(card){
+
+        /* Mengambil Judul Lagu dari Kartu */
+        let title =
+        card.querySelector(".title")
+        .innerText.toLowerCase();
+
+        /* Mencocokkan dengan Pencarian */
+        if(title.includes(input)){
+
+            /*Jika Ketemu (Menampilkan Kartu)*/
+            card.style.display = "block";
+
+        }
+
+        /* Jika Tidak Ketemu (Menyembunyikan Kartu) */
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+</script>
+<body>
+
+    <h1>🎵 Musik Favorit 🎵</h1>
+
+    <input type="text"
+    id="search"
+    placeholder="Cari Musik..."
+    onkeyup="searchMusic()">
+
+    <!--Untuk menyambungkan ke menu lainnya-->
+    <nav>
+    <div class="menu">
+        <a href="Proyek Sumatif Akhir.html">Beranda</a>
+        <a href="Biodata saya.html">Tentang</a>
+    </div>
+</nav>
+     <br></br>
+    <div class="container">
+
+        <!-- Lagu 1 -->
+        <div class="card">
+            <h2 class="title">1000×</h2>
+            <h2>Ghea Indrawari</h2>
+            
+            <!--Gambar Musik-->
+            <img src="ghea 1000x.png">
+            
+            <!--Menambahkan musik atau audio-->
+            <audio id="musik1" src="1000x - Ghea Indrawari  Lirik Lagu - Indolirik.mp3"></audio>
+            
+            <!--Untuk Play dan Stop musik ketika musik di jalankan atau di matikan-->
+            <div class="button-group">
+                <button onclick="playMusic('musik1')">▶ Play</button>
+                <button onclick="stopMusic('musik1')">⏹ Stop</button>
+            </div>
+            <!--Untuk menambah lirik (lirik di sembunyikan saat tidak di sentuh)-->
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    Kadang aku iri melihat mereka <br>
+                    Tercipta seperti pasangan yang sempurna <br>
+                    Saling mencintai dan begitu bahagia <br>
+                    Dan dipuja puji insan yang memandangnya <br>
+                    Lalu aku memandangmu dan tersadar <br>
+                    Betapa beruntungnya <br>
+                    Ada cinta seperti cintamu kepadaku <br>
+                    Hoo <br>
+                   Cukup aku milikmu dan kamu milikku <br>
+                   Tetap di sampingku sampai jadi debu <br>
+                   Sampai akhir waktu sampai maut yang bersaksi <br>
+                   Cintaku abadi<br>
+                   Dan bila aku terlahir seribu kali lagi<br>
+                   Di dunia yang lain aku tak peduli<br>
+                   Kau akan kucari sampai kau tau betapa<br>
+                   Kau kucintai<br>
+                   Lalu aku memandangmu dan tersadar <br>
+                   Betapa beruntungnya<br>
+                   Ada cinta seperti cintamu kepadaku hoo<br>
+                   Cukup aku milikmu dan kamu milikku<br>
+                   Tetap di sampingku sampai jadi debu<br>
+                   Sampai akhir waktu sampai maut yang bersaksi <br>
+                   Cintaku abadi <br>
+                   Dan bila aku terlahir seribu kali lagi <br>
+                   Di dunia yang lain aku tak peduli <br>
+                   Kau akan kucari sampai kau tau betapa <br>
+                   Kau kucintai <br>
+                   Yeee <br>
+                   Seribu kali lagi kau kan kucintai (kau kan kucintai) <br>
+                   Cukup aku milikmu kau milikku (tetap disampingku) <br>
+                   Sampai jadi debu sampai akhir waktu <br>
+                   Hooo kau tetap milikku <br>
+                   Detak di jantungku cintaku abadi <br>
+                   Seribu kali lagi aku tak peduli <br>
+                   Sampai kau tau betapa kau kucintai <br>
+                   Hiii <br>
+                   Kau akan kucari <br>
+                   Sampai kau tau betapa kau kucintai<br>
+                    Dancing under city lights
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 2 -->
+        <div class="card">
+            <h2 class="title">Call Me Mybe</h2>
+            <h2>sAya</h2>
+
+            <!--Gambar Musik-->
+            <img src="true.jpg">
+
+            <audio id="musik2" src="Call Me Maybe - SAya.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik2')">▶ Play</button>
+                <button onclick="stopMusic('musik2')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    내가 왜 이러는지 모르겠어<br>
+You really drive me crazy<br>
+온종일 바쁘다가도 틈만 나면<br>
+네가 궁금해져<br>
+
+딱히 밀고 당기는 건 아닌데<br>
+낯선 이 느낌이 아찔해<br>
+I’m feeling good<br>
+Like on the moon<br>
+
+어디든 갈 수 있을 것만 같아<br>
+지금 우리 둘이<br>
+
+Call me maybe you<br>
+날 다시 설레게 해줘 Love you<br>
+오늘 밤 너와 나 어디까지 갈 수 있는지<br>
+Stay with me<br>
+
+Call me maybe you<br>
+나는 너야 You you you<br>
+Call me maybe you<br>
+오늘 밤 너와 나 둘이서 떠나<br>
+
+붉게 쏟아지는 태양보다 더<br>
+뜨거운 우린 하나가 돼<br>
+너란 바다 그 속에 나를 맡기고 싶어<br>
+I’m coming for you<br>
+
+누가 먼저래도 난 상관없어<br>
+이끌리는 대로 다가와<br>
+I’m feeling good<br>
+Like on the moon<br>
+
+어디든 갈 수 있을 것만 같아<br>
+지금 우리 둘이<br>
+
+Call me maybe you<br>
+날 다시 설레게 해줘 Love you<br>
+오늘 밤 너와 나 어디까지 갈 수 있는지<br>
+Stay with me<br>
+
+Call me maybe you<br>
+나는 너야 You you you<br>
+Call me maybe you<br>
+오늘 밤 너와 나 둘이서 떠나<br>
+
+Baby 내게만 속삭여줘 call me tonight<br>
+더 달콤하게 내가 녹아내리게<br>
+고민할 시간에 Just call me tonight<br>
+기회는 한 번 뿐이야<br>
+
+Call me maybe you<br>
+Call me maybe<br>
+Call me maybe<br>
+Call me maybe you<br>
+
+이 밤이 다 지나가기 전에<br>
+
+Call me maybe you<br>
+나는 너야 You you you<br>
+Call me maybe you<br>
+오늘 밤 너와 나 둘이서 떠나<br>
+
+Call me maybe you<br>
+Call me baby just call me<br>
+Call me maybe you<br>
+오늘 밤 너와 나 둘이서 떠나<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 3 -->
+        <div class="card">
+            <h2 class="title">Bilang I love You</h2>
+            <h2>Souljah</h2>
+
+            <!--Gambar Musik-->
+            <img src="souljah bilang i love.jpg">
+
+            <audio id="musik3" src="SOULJAH - Bilang I Love You (Official Audio) - Bahaya Records.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik3')">▶ Play</button>
+                <button onclick="stopMusic('musik3')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Pesan-pesan terkirim kuberharap kau tahu<br>
+Aku selalu merindu saat kita tak bertemu<br>
+Sinyal-sinyal cintaku mengarah kepadamu<br>
+Harusnya kau tahu kumau kau isi hatiku<br>
+<br>
+Sempat kuberpikir sendiri ini tiada arti<br>
+Namun senyum manismu bukanlah angin lalu<br>
+Walau ku tak bisa janjikan dunia<br>
+Alam semesta dan segala isinya<br>
+Tapi hatiku yakin bilang i love you<br>
+<br>
+Walau ku tak bisa janjikan dunia<br>
+Alam semesta dan segala isinya<br>
+Tapi hatiku yakin bilang i love you<br>
+Oh la la<br>
+<br>
+Kau pernah bilang padaku yang tersayang<br>
+Bahwa diriku ini satu-satunya pasti<br>
+Setiap siang dan malam memikirkanmu sayang<br>
+Segenap hatiku hanyalah kepadamu<br>
+<br>
+Jangan kau pergi jauh dariku kasih<br>
+Karena hariku sepi jika kau tak di sini<br>
+Hatiku kian merana jika kau tak di sana<br>
+Ku kan selalu menanti bertemu kau kekasih<br>
+<br>
+Sempat kuberpikir sendiri ini tiada arti<br>
+Namun senyum manismu bukanlah angin lalu<br>
+Walau ku tak bisa janjikan dunia<br>
+Alam semesta dan segala isinya<br>
+Tapi hatiku yakin bilang i love you<br>
+<br>
+Walau ku tak bisa janjikan dunia<br>
+Alam semesta dan segala isinya<br>
+Tapi hatiku yakin bilang i love you<br>
+Oh la la<br>
+Oh oh la la<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 4 -->
+        <div class="card">
+            <h2 class="title">Habits (Stay High)</h2>
+            <h2>Tove Lo</h2>
+
+            <!--Gambar Musik-->
+            <img src="habits.jpg">
+
+            <audio id="musik4" src="Tove Lo - Habits (Stay High) - ToveLoVEVO.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik4')">▶ Play</button>
+                <button onclick="stopMusic('musik4')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Oh, oh<br>
+Oh, oh<br>
+Oh, oh<br>
+I eat my dinner in my bathtub<br>
+Then I go to sex clubs<br>
+Watching freaky people getting it on<br>
+It doesn't make me nervous<br>
+If anything, I'm restless<br>
+Yeah, I've been around, and I've seen it all<br>
+I get home, I got the munchies<br>
+Binge on all my Twinkies<br>
+Throw up in the 'tub, then I go to sleep<br>
+And I drank up all my money<br>
+Dazed and kinda lonely<br>
+You're gone, and I gotta stay high all the time<br>
+To keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+High all the time to keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+Spend my days locked in a haze<br>
+Trying to forget you, babe, I fall back down<br>
+Gotta stay high all my life to forget I'm missing you<br>
+Ooh-ooh, ooh-ooh<br>
+Pick up daddies at the playground<br>
+How I spend my daytime<br>
+Loosen up the frown, make them feel alive<br>
+I make it fast and greasy<br>
+I'm numb and way too easy<br>
+You're gone, and I gotta stay high all the time<br>
+To keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+High all the time to keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+Spend my days locked in a haze<br>
+Trying to forget you, babe, I fall back down<br>
+Gotta stay high all my life to forget I'm missing you<br>
+Ooh-ooh, ooh-ooh<br>
+Staying in my play pretend<br>
+Where the fun ain't got no end, oh<br>
+Can't go home alone again<br>
+Need someone to numb the pain, oh<br>
+Staying in my play pretend<br>
+Where the fun ain't got no end, oh-oh<br>
+Can't go home alone again<br>
+Need someone to numb the pain<br>
+You're gone, and I gotta stay high all the time<br>
+To keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+High all the time to keep you off my mind<br>
+Ooh-ooh, ooh-ooh<br>
+Spend my days locked in a haze<br>
+Trying to forget you, babe, I fall back down<br>
+Gotta stay high all my life to forget I'm missing you<br>
+Ooh-ooh, ooh-ooh<br>
+Oh, oh<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 5 -->
+        <div class="card">
+            <h2 class="title">O, Tuan</h2>
+            <h2>Feast</h2>
+
+            <!--Gambar Musik-->
+            <img src="o,tuan.jpg">
+
+            <audio id="musik5" src="Feast - o,Tuan (Official Music Video) - .Feast.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik5')">▶ Play</button>
+                <button onclick="stopMusic('musik5')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Oh jelas aku tahu bunga akan layu<br>
+Rumput kian mengering daun kan menguning<br>
+Kau tahu menurutku waktu adalah<br>
+Kutukan ancaman bualan<br>
+Dan satu per satu orang sekitarku<br>
+Mulai ditinggalkan oh ini peringatan<br>
+Untukku o Tuan wahai Kematian<br>
+Ku tak bisa melawan jamah perhentian<br>
+Berjanji kuikhlaskan dengan rela<br>
+Namun jangan hari ini<br>
+Melihatmu masuk ke dalam ruang operasi<br>
+Berdoa semalam suntuk di kamar yang hening<br>
+Tanpa metafora dan analogi<br>
+Kiasan berbelit diksi tanpa berbungkus fiksi<br>
+Aku takut<br>
+Untuknya o Tuan wahai Kematian<br>
+Ku tak bisa melawan jamah perhentian<br>
+Berjanji kuikhlaskan dengan rela<br>
+Namun jangan hari ini<br>
+Kurelakan o Tuan<br>
+Kurelakan namun jangan hari ini<br>
+Kurelakan o Tuan<br>
+Kurelakan namun jangan hari ini<br>
+Kurelakan o Tuan<br>
+Kurelakan namun jangan hari ini<br>
+Namun jangan hari ini<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 6 -->
+        <div class="card">
+            <h2 class="title">A Little Piece Of Heaven</h2>
+            <h2>Avenged Sevenfold</h2>
+
+            <!--Gambar Musik-->
+            <img src="a little.jpg">
+
+            <audio id="musik6" src="Avenged Sevenfold - A Little Piece Of Heaven [Official Music Video] - Avenged Sevenfold.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik6')">▶ Play</button>
+                <button onclick="stopMusic('musik6')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Before the story begins, is it such a sin<br>
+For me to take what's mine, until the end of time?<br>
+We were more than friends, before the story ends<br>
+And I will take what's mine, create what God would never design<br>
+Our love had been so strong for far too long<br>
+I was weak with fear that somethin' would go wrong<br>
+Before the possibilities came true<br>
+I took all possibility from you<br>
+Almost laughed myself to tears<br>
+Conjuring her deepest fears (come here you fucking bitch)<br>
+Must have stabbed her fifty fucking times<br>
+I can't believe it<br>
+Ripped her heart out right before her eyes<br>
+Eyes over easy, eat it, eat it, eat it<br>
+She was never this good in bed, even when she was sleepin'<br>
+Now she's just so perfect I've never been quite so fucking deep in<br>
+It goes on and on and on<br>
+I can keep you lookin' young and preserved forever<br>
+With a fountain to spray on your youth whenever<br>
+'Cause I really always knew that my little crime<br>
+Would be cold, that's why I got a heater for your thighs<br>
+And I know, I know it's not your time<br>
+But bye, bye<br>
+And a word to the wise, when the fire dies<br>
+You think it's over but it's just begun<br>
+Baby, don't cry<br>
+You had my heart, at least for the most part<br>
+'Cause everybody's gotta die sometime<br>
+We fell apart, let's make a new start<br>
+'Cause everybody's gotta die sometime, yeah, yeah<br>
+But baby, don't cry<br>
+Now possibilities I'd never considered<br>
+Are occurring the likes of which I'd never heard<br>
+Now an angry soul comes back from beyond the grave<br>
+To repossess a body with which I'd misbehaved<br>
+Smiling right from ear to ear<br>
+Almost laughed herself to tears<br>
+Must have stabbed him fifty fucking times<br>
+I can't believe it<br>
+Ripped his heart out right before his eyes<br>
+Eyes over easy, eat it, eat it, eat it (eat the shit out of it)<br>
+Now that it's done, I realize the error of my ways<br>
+I must venture back to apologize from somewhere far beyond the grave<br>
+I gotta make up for what I've done<br>
+'Cause I was all up in a piece of heaven<br>
+While you burned in hell, no peace forever<br>
+'Cause I really always knew that my little crime<br>
+Would be cold, that's why I got a heater for your thighs<br>
+And I know, I know it's not your time<br>
+But bye, bye<br>
+And a word to the wise, when the fire dies<br>
+You think it's over but it's just begun<br>
+But baby, don't cry<br>
+You had my heart, at least for the most part<br>
+'Cause everybody's gotta die sometime<br>
+We fell apart, let's make a new start<br>
+'Cause everybody's gotta die sometime, yeah, yeah<br>
+But baby, don't cry<br>
+I will suffer for so long (what will you do, not long enough)<br>
+To make it up to you (I pray to God that you do)<br>
+I'll do whatever you want me to do (well, then, I'll grant you one chance)<br>
+And if it's not enough (if it's not enough, if it's not enough)<br>
+If it's not enough (not enough)<br>
+Try again (try again)<br>
+And again (and again)<br>
+Over and over again<br>
+We're coming back, coming back<br>
+We'll live forever, live forever<br>
+Let's have wedding, have a wedding<br>
+Let's start the killing, start the killing<br>
+Do you take this man in death for the rest of your unnatural life<br>
+Yes, I do<br>
+Do you take this woman in death for the rest of your unnatural life<br>
+I do<br>
+I now pronounce you<br>
+'Cause I really always knew that my little crime<br>
+Would be cold, that's why I got a heater for your thighs<br>
+And I know, I know it's not your time<br>
+But bye, bye<br>
+And a word to the wise, when the fire dies<br>
+You think it's over but it's just begun<br>
+But baby, don't cry<br>
+You had my heart, at least for the most part<br>
+'Cause everybody's gotta die sometime<br>
+We fell apart, let's make a new start, oh<br>
+'Cause everybody's gotta die sometime, yeah, yeah<br>
+But baby, don't cry<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 7 -->
+        <div class="card">
+            <h2 class="title">Iqro'</h2>
+            <h2>Raim Laode</h2>
+
+            <!--Gambar Musik-->
+            <img src="iqro.jpg">
+
+            <audio id="musik7" src="Iqro' - Raim Laode (Music Acoustic Rooftop) - Raim Laode.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik7')">▶ Play</button>
+                <button onclick="stopMusic('musik7')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Bintang bintang dan pepohonan<br>
+Kedua bersujud pada-Nya<br>
+Masih kukagum tentang langit<br>
+Kokoh dan tinggi tak bertiang<br>
+Siapakah aku sebenarnya<br>
+Hanya atom yang kecil besar sombongnya<br>
+Sampai di masa ini<br>
+Ku masih mencari<br>
+Tentang arti dunia<br>
+Yang ramai nan sunyi<br>
+Bantu aku berjalan menuju cahaya<br>
+Lalu aku berjanji menjadi yang baik<br>
+Semua Kau cipta berpasang<br>
+Sebab hanya Engkau yang satu<br>
+Seluruh bima sakti sujud<br>
+Tak ada satu pun yang luput<br>
+Siapakah aku sebenarnya<br>
+Hanya atom yang kecil besar sombongnya<br>
+Sampai di masa ini<br>
+Ku masih mencari<br>
+Tentang arti dunia<br>
+Yang ramai nan sunyi<br>
+Bantu aku berjalan menuju cahaya<br>
+Lalu aku berjanji menjadi yang baik<br>
+Baru aku mengerti<br>
+Ternyata bahagia<br>
+Bukan perkara nanti tetapi sekarang<br>
+Harta paling berharga<br>
+Bukanlah materi<br>
+Tetapi tentang waktu<br>
+Tak bisa ku tahan<br>
+Uhh uu<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 8 -->
+        <div class="card">
+            <h2 class="title">TERSIMPAN</h2>
+            <h2>OUR STORY</h2>
+
+            <!--Gambar Musik-->
+            <img src="tersimpan.jpg">
+
+            <audio id="musik8" src="OUR STORY - TERSIMPAN (Official Lyric Video) - OUR STORY OFFICIAL.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik8')">▶ Play</button>
+                <button onclick="stopMusic('musik8')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Tak pernah kurasakan<br>
+Rasa yang t'lah lama hilang<br>
+Kini hadir kembali<br>
+Saat melihatmu<br>
+Ingin rasanya diri ini<br>
+Memiliki dirimu<br>
+Namun semua hanya mimpi indah bagiku<br>
+Akankah kau merasakan<br>
+Rasa cinta ku ini<br>
+Tertatih aku dalam mencintaimu<br>
+Seakan semua menghantui<br>
+Perjalanan hidup ini<br>
+Terkikis semua hanya di relung hati<br>
+'Kan kusimpan semua rasa yang telah aku rasakan<br>
+Takkan mungkin, kumelupakan semua<br>
+Kepada dirimu yang terlalu indah untuk kumiliki<br>
+Dan biarkan aku menyimpan semua ini<br>
+Tak ku sadari<br>
+Memang terasa perih bila<br>
+Cinta tak bisa memiliki<br>
+Tapi lebih sakit lagi<br>
+Bila memiliki tanpa dicintai<br>
+'Kan kusimpan semua rasa yang telah aku rasakan<br>
+Takkan mungkin, ku melupakan semua<br>
+Kepada dirimu yang terlalu indah untuk kumiliki<br>
+Dan biarkan aku menyimpan semua ini<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 9 -->
+        <div class="card">
+            <h2 class="title">Kicau Mania</h2>
+            <h2>Ndarboy Genk</h2>
+
+            <!--Gambar Musik-->
+            <img src="kicauu.jpg">
+
+            <audio id="musik9" src="DJ KICAU MANIA REMIX X VIDEO KUCING JOGET KICAU MANIA  GASPOL NDANGAK VIRAL TIKTOK  AKBAR CHALAY - Bocil Fvnky Rmx.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik9')">▶ Play</button>
+                <button onclick="stopMusic('musik9')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+Tak rumat seka piyik<br>
+Tak loloh nganggo jangkrik<br>
+Aku pamit nggantang, ya, Dhik<br>
+Muga rejekine apik<br>
+Untuk para kicau mania<br>
+Masih bersama Ndarboy Genk<br>
+Banditoz Yaow 86<br>
+All Yaow ready?<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Ora nggantang, ora mangan, ra nduwe gaji bulanan<br>
+Lah wong dudu cah kantoran, tangga-tangga padha isin<br>
+Yen kepethuk isih esuk, aku uwis ngelus manuk<br>
+Lungguh ndhodhok, nyumet rokok, manukku wis manthuk-manthuk<br>
+Penak dadi cah gantangan, ditelateni, ya lumayan<br>
+Start seka mung latberan, ra wedi ro sing bos-bosan<br>
+Manuk sekti mandraguna, modhal nekat karo ndonga<br>
+Kicau mania gawan bayi, manukku wani kemaki<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Burungku datang, semua senang<br>
+Burung berjuang, suara lantang<br>
+Burung berdendang di atas tiang<br>
+Ra kudu kondhang, sing penting menang<br>
+Burungku gacor, wis mesthi skor<br>
+Burungku merji, ra sah dha meri<br>
+Burung menari, naikkan tensi<br>
+Angkatlah topi, minat? Mangga japri<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Gas pol ndangak, digas pol ndangak-ndangak<br>
+Manukku siap nembak, poinku ra keoyak<br>
+Ra isa gliyak-gliyak, stelan wis gas pol ndangak<br>
+Muraiku menang mutlak, liyane mung padha nyimak<br>
+Aku ra golek musuh, ya ora seneng rusuh<br>
+Yen padha kepethuk, aja lali aruh-aruh<br>
+Padha cah gantangan, ra sah iren-irenan<br>
+Seduluran merga hobi, muga berkah ngrejekeni<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+Kicau, kicau, kicau mania (hm)<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 10 -->
+        <div class="card">
+            <h2 class="title">Black Hole</h2>
+            <h2>DJ TELOOR</h2>
+
+            <!--Gambar Musik-->
+            <img src="black.png">
+
+            <audio id="musik10" src="drop_jaga_keselamatan - LABO 12TION.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik10')">▶ Play</button>
+                <button onclick="stopMusic('musik10')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    !TIDAK ADA LIRIK!
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 11 -->
+        <div class="card">
+            <h2 class="title">Jatuh Suka</h2>
+            <h2>Tulus</h2>
+
+            <!--Gambar Musik-->
+            <img src="Tulus.jpg">
+
+            <audio id="musik11" src="TULUS - Jatuh Suka (Official Lyric Video) - Tulus.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik11')">▶ Play</button>
+                <button onclick="stopMusic('musik11')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    Sungguh ku tidak memiliki daya<br>
+Di depan harummu<br>
+Sungguh terkunci kata yang tertata<br>
+Di depan ragamu<br>
+Hu<br>
+Bila kau lihat ku tanpa sengaja<br>
+Beginikah surga<br>
+Bayangkan bila kau ajakku bicara<br>
+Ini semua bukan salahmu<br>
+Punya magis perekat yang sekuat itu<br>
+Dari lahir sudah begitu<br>
+Maafkan<br>
+Aku jatuh suka<br>
+Bila kau lihat ku tanpa sengaja<br>
+Hu<br>
+Beginikah surga<br>
+Bayangkan bila kau ajakku bicara<br>
+Ini semua bukan salahmu<br>
+Punya magis perekat yang sekuat itu<br>
+Dari lahir sudah begitu<br>
+Maafkan<br>
+Aku jatuh suka<br>
+Bila kau berkenan biarkanku di sampingmu<br>
+Berkuranglah satu jiwa yang sepi<br>
+Ini semua bukan salahmu<br>
+Punya magis perekat yang sekuat itu<br>
+Dari lahir sudah begitu<br>
+Maafkan oh uh<br>
+Ini semua bukan salahmu<br>
+Punya magis perekat yang sekuat itu<br>
+Dari lahir sudah begitu<br>
+Maafkan<br>
+Aku jatuh suka hm<br>
+Aku jatuh suka<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 12 -->
+        <div class="card">
+            <h2 class="title">Jika Cinta Dia</h2>
+            <h2>Geisha</h2>
+
+            <!--Gambar Musik-->
+            <img src="geisha.jpg">
+
+            <audio id="musik12" src="GEISHA - Jika Cinta Dia - Lirik video - 1106 Radio.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik12')">▶ Play</button>
+                <button onclick="stopMusic('musik12')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    Terlampau sering kau buang air mataku<br>
+Tak pernah kau tahu dalamnya rasa cintaku<br>
+Tak banyak inginku, jangan kau ulangi<br>
+Menyakiti aku sesuka kelakuanmu<br>
+Ku bukan manusia yang tidak berfikir<br>
+Berulang kali kau lakukan itu padaku<br>
+Jika cinta dia, jujurlah padaku<br>
+Tinggalkan aku di sini tanpa senyumanmu<br>
+Jika cinta dia, kucoba mengerti<br>
+Teramat sering kau membuat patah hatiku (patah hatiku)<br>
+Kau datang padanya, tak pernah ku tahu<br>
+Kau tinggalkan aku di saat kubutuhkanmu<br>
+Cinta tak begini, selama ku tahu<br>
+Tetapi ku lemah kar'na cintaku padamu<br>
+Jika cinta dia, jujurlah padaku<br>
+Tinggalkan aku di sini tanpa senyumanmu<br>
+Jika cinta dia, kucoba mengerti<br>
+Mungkin kau bukan cinta sejati di hidupku<br>
+Jika cinta dia, jujurlah padaku<br>
+Tinggalkan aku di sini tanpa senyumanmu<br>
+Jika cinta dia, kucoba mengerti<br>
+Mungkin kau bukan cinta sejati di hidupku<br>
+Jika cinta dia, kucoba mengerti<br>
+oh-oh-ho-oh<br>
+(Tinggalkan aku di sini tanpa senyumanmu) ho-uh-uh<br>
+Jika cinta dia, kucoba mengerti<br>
+Mungkin kau bukan cinta sejati di hidupku<br>
+                </p>
+            </details>
+
+        </div>
+        <!-- Lagu 13 -->
+        <div class="card">
+            <h2 class="title">Say No</h2>
+            <h2>TASYA</h2>
+
+            <!--Gambar Musik-->
+            <img src="TASYA.jpg">
+
+            <audio id="musik13" src="Tasya Kamila - Say No (Lyrics) - life + lyrics.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik13')">▶ Play</button>
+                <button onclick="stopMusic('musik13')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+Go away pergilah kamu<br>
+Go away<br>
+Mantra-mantra cinta selalu terucap untukku<br>
+Janji-janji manis selalu terbangkan anganku<br>
+Kau bilang ku cantik ku manis ku lucu<br>
+Kau coba merayuku<br>
+Kau bilang you love me you miss me you need me<br>
+Kau coba mencuri hatiku<br>
+Tapi tunggu dulu kau jangan besar kepala<br>
+Ku tak semudah untuk ditaklukkan<br>
+I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+Mantra-mantra cinta selalu terucap untukku (cinta)<br>
+Janji-janji manis selalu terbangkan anganku (janji-janji manismu)<br>
+Kau bilang ku cantik ku manis ku lucu<br>
+Kau coba merayuku<br>
+Kau bilang you love me you miss me you need me<br>
+Kau coba mencuri hatiku<br>
+Tapi tunggu dulu kau jangan besar kepala<br>
+Ku tak semudah untuk ditaklukkan<br>
+I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+Say no say no<br>
+Buaya darat<br>
+I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+I will say no say no<br>
+Kamu kamu lelaki buaya darat<br>
+Ku ingin engkau jauh dariku<br>
+Kamu kamu semua go away<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 14 -->
+        <div class="card">
+            <h2 class="title">Ada Aku Disini</h2>
+            <h2>Dhyo Haw</h2>
+
+            <!--Gambar Musik-->
+            <img src="Ada aku disini.jpg">
+            <audio id="musik14" src="Dhyo Haw - Ada Aku Disini (Official Lyric Video) - Warner Music Indonesia.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik14')">▶ Play</button>
+                <button onclick="stopMusic('musik14')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    Biarkan aku jadi sesuatu yang berarti untukmu<br>
+Tapi tidak sesaat<br>
+Biarkan aku jadi sesuatu yang berarti untukmu<br>
+Tapi tidak sesaat<br>
+Biarkan aku jadi tempat untuk bersandar<br>
+Di saat kau terpuruk rapuh<br>
+Jangan sampai kau lemah<br>
+Ku yakin kau pasti bisa bangkit<br>
+Jangan anggap kau sendiri hadapi<br>
+Ada aku di sini<br>
+Walau dia kini telah lama di hidupmu<br>
+Namun sampai kini tak bahagiakan kamu<br>
+Lupakan semuanya tinggalkan saja percuma<br>
+Bukalah matamu selebar dunia ini<br>
+Dan rasakan banyak orang yang peduli<br>
+Jangan ingat lagi jangan kau sesali ada aku di sini<br>
+Jangan sampai kau lemah<br>
+Ku yakin kau pasti bisa bangkit<br>
+Jangan anggap kau sendiri hadapi<br>
+Ada aku di sini<br>
+Walau dia kini telah lama di hidupmu<br>
+Namun sampai kini tak bahagiakan kamu<br>
+Lupakan semuanya tinggalkan saja percuma<br>
+Bukalah matamu selebar dunia ini<br>
+Dan rasakan banyak orang yang peduli<br>
+Jangan ingat lagi jangan kau sesali ada aku di sini<br>
+Jangan ingat lagi jangan kau sesali ada aku di sini<br>
+                </p>
+            </details>
+        </div>
+
+        <!-- Lagu 15 -->
+        <div class="card">
+            <h2 class="title">Tipu Daya</h2>
+            <h2>The Panturas</h2>
+
+            <!--Gambar Musik-->
+            <img src="tipu dayaa.jpg">
+            <audio id="musik15" src="The Panturas - Tipu Daya (Official Lyric Video) - The Panturas.mp3"></audio>
+
+            <div class="button-group">
+                <button onclick="playMusic('musik15')">▶ Play</button>
+                <button onclick="stopMusic('musik15')">⏹ Stop</button>
+            </div>
+
+            <details>
+                <summary>Lihat Lirik</summary>
+                <p>
+                    Satu jengkal belati<br>
+Siap mencabik nadi<br>
+Pecundang di perantauan<br>
+Gelar dia hari ini<br>
+Dirundung kenyataan<br>
+Fakta yang mencengangkan<br>
+Rusak perangai yang dia ciptakan<br>
+Boyak sudah, citra berantakan<br>
+Melayang, bak camar menembus awan<br>
+Bayangkan sanjungan harum semerbak mawar<br>
+Dia berjaya di barat daya<br>
+Gagah perkasa di belantara<br>
+Sang penguasa jalur sutra<br>
+Oh, jelas kaya raya<br>
+Dia menaklukkan Karimata<br>
+Sintas berlayar di Karibia<br>
+Harum namanya di cakrawala<br>
+Oh, hanya tipu daya<br>
+Melayang, bak camar menembus awan<br>
+Bayangkan sanjungan terjun ke dasar lautan (hey)<br>
+Dia berjaya di barat daya<br>
+Gagah perkasa di belantara<br>
+Sang penguasa jalur sutra<br>
+Oh, jelas kaya raya<br>
+Dia menaklukkan Karimata<br>
+Sintas berlayar di Karibia<br>
+Harum namanya di cakrawala<br>
+Oh, hanya tipu daya<br>
+Hanya tipu daya<br>
+Hanya tipu daya<br>
+                </p>
+            </details>
+        </div>
+
+    </div>
+
+<!--fungsi pengontrol audio-->
+    <script>
+        function playMusic(id) {
+            document.getElementById(id).play();
+        }
+
+        function stopMusic(id) {
+            let music = document.getElementById(id);
+            music.pause();
+            music.currentTime = 0; 
+        }
+    </script>
+
+</body>
+</html>
