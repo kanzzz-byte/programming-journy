@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ebb5f4, #ffabf0);
+}
+
+/* NAVBAR */
+.menu {
+  background-color: #333;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.menu a {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background-color: #ffb6d9;
+  color: black;
+}
+
+/* Judul Utama*/
+h1 {
+    text-align: center; /* teks rata tengah */
+    color: white; /* warna teks putih */
+    margin-bottom: 30px; /* jarak bawah 30px */
+}
+
+/* wadah dengan grid */
+.container {
+    display: grid; /* mengaktifkan grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* kolom responsif */
+    gap: 20px; /* jarak antar item 20px */
+    align-items: start; /* item sejajar di atas */
+}
+
+/* wadah kartu */
+.card {
+    background: rgb(245, 238, 242); /* latar pink sangat muda */
+    border-radius: 20px; /* sudut membulat 20px */
+    padding: 20px; /* jarak dalam 20px (dari tepi ke konten) */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* bayangan di bawah */
+    transition: 0.3s; /* animasi 0.3 detik */
+    align-items: start; /* item di dalam sejajar ke atas */
+}
+
+/* gambar di dalam kartu */
+.card img{
+    width: 100%; /* lebar penuh mengikuti kartu */
+    aspect-ratio: 1/1; /* rasio aspek 1:1 (bujur sangkar) */
+    object-fit: cover; /* gambar memenuhi area tanpa merusak proporsi */
+    border-radius: 15px; /* sudut gambar membulat 15px */
+}
+
+/* saat kursor di atas kartu */
+.card:hover {
+    transform: scale(1.05); /* kartu membesar 5% */
+}
+
+/* judul di dalam kartu */
+.card h2 {
+    color: #f957ae;
+    text-align: center;
+}
+
+/* wadah grup tombol */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+/* tombol */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4f81;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* tombol saat diarahi kursor */
+button:hover {
+    background: #ff2e6d; /* latar menjadi pink gelap */
+}
+ /* wadah lirik yang di sembunyikan */
+details {
+    background: #ffe5ec;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* judul yang bisa diklik untuk membuka/tutup */
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #ff2e6d;
+}
+
+/* paragraf di dalam details ( lirik yang di sembunyikan ) */
+p {
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+#search{
+    width: 60%;
+    padding: 12px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
